@@ -29,7 +29,7 @@ body {
 #menu li {
     float: right;
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 55px;
 }
 
 #menu a {
@@ -277,3 +277,45 @@ body {
     }
 
 }
+
+.my-second-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 36px;
+  }
+  
+  .my-second-table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 76px;
+  }
+  
+  .my-table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .section-1 {
+    text-align: center;
+    background-color: lightblue;
+  }
+  
+  .section-2 {
+    text-align: center;
+    background-color: lightgreen;
+  }
+  
+  .section-3 {
+    text-align: center;
+    background-color: lightyellow;
+  }
+  
+  .section-4 {
+    text-align: center;
+    background-color: lightpink;
+  }
+    
