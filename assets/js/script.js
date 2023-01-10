@@ -116,6 +116,8 @@ function incrementWrongAnswer() {
 
 function displayAdditionQuestion(operand1, operand2) {
 
+    // Displays the addition question
+
     document.getElementById("operand1").textContent = operand1;
     document.getElementById("operand2").textContent = operand2;
     document.getElementById("operator").textContent = "+";
@@ -123,6 +125,10 @@ function displayAdditionQuestion(operand1, operand2) {
 }
 
 function displaySubtractQuestion(operand1, operand2) {
+
+    /* Displays the subtraction question 
+    and makes certain that there will be no negative numbers
+    in the answers */
 
     document.getElementById("operand1").textContent = operand1 > operand2 ? operand1 : operand2;
     document.getElementById("operand2").textContent = operand1 > operand2 ? operand2 : operand1;
@@ -132,14 +138,19 @@ function displaySubtractQuestion(operand1, operand2) {
 
 function displayMultiplyQuestion(operand1, operand2) {
 
+    // Displays the multiply question 
+
     document.getElementById("operand1").textContent = operand1;
     document.getElementById("operand2").textContent = operand2;
     document.getElementById("operator").textContent = "x";
 
 }
 
-// Add your division question here
 function displayDivisionQuestion(operand1, operand2) {
+
+    /* Displays the division question
+    and makes certain that the first number is always 
+    dividable with the second one */
 
     document.getElementById("operand1").textContent = operand1 * operand2;
     document.getElementById("operand2").textContent = operand2;
