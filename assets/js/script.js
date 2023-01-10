@@ -1,3 +1,31 @@
+/*let intervalId;
+
+// Function to start the timer
+function startTimer() {
+    // move the setInterval function inside the startTimer function
+    intervalId = setInterval(function(){ 
+        let timerElement = document.getElementById("timer");
+        let currentTime = timerElement.innerHTML;
+        currentTime++;
+        timerElement.innerHTML = currentTime;
+    }, 1000);
+}
+
+// Function to stop the timer
+function stopTimer() {
+    clearInterval(intervalId);
+} */
+
+setInterval(function(){ 
+    let timerElement = document.getElementById("timer");
+    let currentTime = timerElement.innerHTML;
+    currentTime++;
+    timerElement.innerHTML = currentTime;
+}, 1000);
+
+
+
+
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
