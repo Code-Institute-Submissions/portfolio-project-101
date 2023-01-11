@@ -24,6 +24,7 @@ body {
 #menu{
     font-size: 110%;
     letter-spacing: 4px;
+    margin-top: 66px;
 }
 
 #menu li {
@@ -278,44 +279,43 @@ body {
 
 }
 
-.my-second-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 36px;
-  }
-  
-  .my-second-table td {
-    border: 1px solid black;
-    padding: 8px;
-  }
 .my-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 76px;
+    margin-top: 144px;
   }
   
   .my-table td {
     border: 1px solid black;
     padding: 8px;
+    width: 33%;
   }
   
+  .my-table th {
+    padding: 8px;
+    font-size: 136%;
+    width: 33%;
+  }
   .section-1 {
     text-align: center;
     background-color: lightblue;
+    font-size: xx-large;
+    color: #0d1013;
   }
   
   .section-2 {
     text-align: center;
     background-color: lightgreen;
+    font-size: xx-large;
+    color: #0d1013;
   }
   
   .section-3 {
     text-align: center;
     background-color: lightyellow;
+    font-size: xx-large;
+    color: #0d1013;
   }
   
-  .section-4 {
-    text-align: center;
-    background-color: lightpink;
-  }
+
     
