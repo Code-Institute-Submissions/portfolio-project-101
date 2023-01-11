@@ -52,25 +52,28 @@
         <p class="scores">Time <span id="timer">0</span></p>
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-        <p class="scores"><strong><a href="summary.html" rel="noopener" target="_blank">Get Summary </a></strong></p>        
+        <p class="scores"><strong><a href="summary.html" rel="noopener" 
+            target="_blank" id="link">Get Summary </a></strong>
+        </p>   
     </div>
 
     <script src="assets/js/script.js"></script>
 </body>
 
 </html>
-<!--
-<a href="second.html" id="link">Second page</a>
-<span id="span1">Value 1</span>
-<span id="span2">Value 2</span>
-<span id="span3">Value 3</span>
+<!-- Notes from testing Link to pass data between pages
+
+<a href="summary.html" id="link">Get Summary</a>
+<span id="timer">Value 1</span>
+<span id="score">Value 2</span>
+<span id="incorrect">Value 3</span>
 
 <script>
     var link = document.getElementById("link");
     link.addEventListener("click", function(){
-        var value1 = document.getElementById("span1").innerHTML;
-        var value2 = document.getElementById("span2").innerHTML;
-        var value3 = document.getElementById("span3").innerHTML;
+        var value1 = document.getElementById("timer").innerHTML;
+        var value2 = document.getElementById("score").innerHTML;
+        var value3 = document.getElementById("incorrect").innerHTML;
         console.log(value1, value2, value3);
     });
 </script>
