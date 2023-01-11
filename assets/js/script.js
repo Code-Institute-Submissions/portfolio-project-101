@@ -1,4 +1,6 @@
 let currentTime = 0;
+// Timer display and conversion to hours, minutes, seconds
+
 intervalId = setInterval(function(){ 
     let timerElement = document.getElementById("timer");
     currentTime++;
@@ -50,6 +52,8 @@ function runGame(gameType) {
 
     let num1 = Math.floor(Math.random() * 25) + 1;
     let num2 = Math.floor(Math.random() * 25) + 1;
+    let num3 = Math.floor(Math.random() * 10) + 1;
+    let num4 = Math.floor(Math.random() * 10) + 1;
 
 
     if (gameType === "addition") {
@@ -59,7 +63,7 @@ function runGame(gameType) {
     } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
     } else if (gameType === "division") {
-        displayDivisionQuestion(num1, num2);
+        displayDivisionQuestion(num3, num4);
     } else {
         alert(`Unknown game type ${gameType}`);
         throw `Unknown game type ${gameType}, aborting!`;
