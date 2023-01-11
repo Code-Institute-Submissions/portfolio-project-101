@@ -52,6 +52,9 @@ function runGame(gameType) {
 
     let num1 = Math.floor(Math.random() * 25) + 1;
     let num2 = Math.floor(Math.random() * 25) + 1;
+
+    // Adds two random numbers between 1 and 10 for "Division"
+
     let num3 = Math.floor(Math.random() * 10) + 1;
     let num4 = Math.floor(Math.random() * 10) + 1;
 
