@@ -1,67 +1,3 @@
-/* Testing : Set scoreboard on summary.html via link from index.html
-
-var link = document.getElementById("link");
-link.addEventListener("click", function(){
-    var value1 = document.getElementById("timer").innerHTML;
-    var value2 = document.getElementById("score").innerHTML;
-    var value3 = document.getElementById("incorrect").innerHTML;
-    console.log(value1, value2, value3);
-    localStorage.setItem("value1", value1);
-    localStorage.setItem("value2", value2);
-    localStorage.setItem("value3", value3);
-});
-
-//  Gets Values from local storage to summary html
-
-var value1 = localStorage.getItem("value1");
-var value2 = localStorage.getItem("value2");
-var value3 = localStorage.getItem("value3");
-
-
-var cell1 = document.getElementById("cell1");
-var cell2 = document.getElementById("cell2");
-var cell3 = document.getElementById("cell3");
-cell1.innerHTML = value1;
-cell2.innerHTML = value2;
-cell3.innerHTML = value3;
-
-
-if (value1 != null && value1 !== undefined) {
-  cell1.innerHTML = value1;
-}
-
-
-
-if (value1) {
-    cell1.innerHTML = value1;
-}
-if (value2) {
-    cell2.innerHTML = value2;
-}
-if (value3) {
-    cell3.innerHTML = value3;
-}
-
- */
-
-// Timer display and conversion to hours, minutes, seconds
-
-let currentTime = 0;
-
-intervalId = setInterval(function(){ 
-    let timerElement = document.getElementById("timer");
-    currentTime++;
-
-    if(timerElement !== null){
-    let hours = Math.floor(currentTime / 3600);
-    let minutes = Math.floor((currentTime % 3600) / 60);
-    let seconds = currentTime % 60;      
-
-    timerElement.innerHTML = hours.toFixed(0) + "h : " + minutes.toFixed(0) + "m : " + seconds.toFixed(0) + "s";}
-}, 1000);
-
-
-
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
@@ -87,6 +23,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
     runGame("addition");
 });
+
+// Timer display and conversion to hours, minutes, seconds
+
+let currentTime = 0;
+
+intervalId = setInterval(function(){ 
+    let timerElement = document.getElementById("timer");
+    currentTime++;
+
+    if(timerElement !== null){
+    let hours = Math.floor(currentTime / 3600);
+    let minutes = Math.floor((currentTime % 3600) / 60);
+    let seconds = currentTime % 60;      
+
+    timerElement.innerHTML = hours.toFixed(0) + "h : " + minutes.toFixed(0) + "m : " + seconds.toFixed(0) + "s";}
+}, 1000);
 
 function runGame(gameType) {
 
