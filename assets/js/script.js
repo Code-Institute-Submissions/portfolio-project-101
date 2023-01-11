@@ -1,28 +1,15 @@
-/*let intervalId;
-
-// Function to start the timer
-function startTimer() {
-    // move the setInterval function inside the startTimer function
-    intervalId = setInterval(function(){ 
-        let timerElement = document.getElementById("timer");
-        let currentTime = timerElement.innerHTML;
-        currentTime++;
-        timerElement.innerHTML = currentTime;
-    }, 1000);
-}
-
-// Function to stop the timer
-function stopTimer() {
-    clearInterval(intervalId);
-} */
-
-setInterval(function(){ 
+let currentTime = 0;
+intervalId = setInterval(function(){ 
     let timerElement = document.getElementById("timer");
-    let currentTime = timerElement.innerHTML;
     currentTime++;
-    timerElement.innerHTML = currentTime;
-}, 1000);
 
+    if(timerElement !== null){
+    let hours = Math.floor(currentTime / 3600);
+    let minutes = Math.floor((currentTime % 3600) / 60);
+    let seconds = currentTime % 60;      
+
+    timerElement.innerHTML = hours.toFixed(0) + " : " + minutes.toFixed(0) + " : " + seconds.toFixed(0);}
+}, 1000);
 
 
 
