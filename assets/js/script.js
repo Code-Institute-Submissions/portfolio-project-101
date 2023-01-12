@@ -100,13 +100,16 @@ function checkAnswer() {
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
 
-    if (isCorrect) {
+    if (isNaN(userAnswer)) {
+        alert("Wrong! Please enter a valid number.");
+    } else if (isCorrect) {
         alert("Hey! You got it right! :D");
         incrementScore();
     } else {
         alert(`Awwww...you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
         incrementWrongAnswer();
     }
+    
 
     runGame(calculatedAnswer[1]);
 
