@@ -33,7 +33,21 @@ for (let button of buttons) {
     runGame("addition");
 });
 
-//test
+//------ Sound control buttons
+/*
+var soundOnImg = document.getElementById("sound-on");
+var soundOffImg = document.getElementById("sound-off");
+
+ soundButton.onclick = function() {
+  if (muted) {
+    soundOnImg.style.display = "none";
+    soundOffImg.style.display = "block";
+  } else {
+    soundOnImg.style.display = "block";
+    soundOffImg.style.display = "none";
+  }};
+*/
+//-------Link
 
 var link = document.getElementById("link");
 link.addEventListener("click", function(){

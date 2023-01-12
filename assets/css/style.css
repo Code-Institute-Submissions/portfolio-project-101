@@ -114,6 +114,14 @@ body {
 
 /* --------- Buttons */
 
+#sound-button {
+    float: left;
+}
+
+#sound-on, #sound-off {
+    height: 60px;
+}
+
 .btn {
     width: 220px;
     height: 60px;
