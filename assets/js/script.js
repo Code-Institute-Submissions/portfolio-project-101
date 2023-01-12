@@ -24,6 +24,35 @@ document.addEventListener("DOMContentLoaded", function() {
     runGame("addition");
 });
 
+//test
+
+var link = document.getElementById("link");
+link.addEventListener("click", function(){
+    var value1 = document.getElementById("timer").innerHTML;
+    var value2 = document.getElementById("score").innerHTML;
+    var value3 = document.getElementById("incorrect").innerHTML;
+    console.log(value1);
+    console.log(value2);
+    console.log(value3);
+// set link values in local storage
+    localStorage.setItem("value1", value1);
+    localStorage.setItem("value2", value2);
+    localStorage.setItem("value3", value3);
+
+});
+
+
+var value1 = localStorage.getItem("value1");
+var value2 = localStorage.getItem("value2");
+var value3 = localStorage.getItem("value3");
+var cell1 = document.getElementsByClassName("section-1");
+var cell2 = document.getElementsByClassName("section-2");
+var cell3 = document.getElementsByClassName("section-3");
+
+cell1.innerHTML = value1;
+cell2.innerHTML = value2;
+cell3.innerHTML = value3;
+
 // Timer display and conversion to hours, minutes, seconds
 
 let currentTime = 0;
