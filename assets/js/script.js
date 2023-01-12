@@ -1,35 +1,29 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
+var muted = true;
+
+function muteAudio(mute) {
+    muted = mute;
+}    
+
 document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
-/*
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
-            } else {
-                let gameType = this.getAttribute("data-type");
-                runGame(gameType);
-            }
-        });
-    }
- */
     const myAudio = new Audio("assets/audio/Click.mp3");
+    let buttons = document.getElementsByTagName("button");    
 for (let button of buttons) {
     button.addEventListener("click", function() {
         if (this.getAttribute("data-type") === "submit") {
             checkAnswer();
         } else {
-            myAudio.play();
+            if(!muted) {
+                myAudio.play();
+            }
+
             let gameType = this.getAttribute("data-type");
             runGame(gameType);
         }
     });
 }
-
-
-
     document.getElementById("answer-box").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             checkAnswer();
@@ -152,17 +146,7 @@ function calculateCorrectAnswer() {
         throw `Unimplemented operator ${operator}, aborting!`;
     }
 }
-
-/*
-function incrementScore() {
-
-    // Gets the current score from the DOM and increments it
-
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-
-}
-*/
+// Gets the current score from the DOM and increments it
 
 let sound1 = new Audio("assets/audio/Celebrate.mp3");
 let sound2 = new Audio("assets/audio/applaude.mp3");
@@ -171,10 +155,12 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 
-    if (oldScore % 10 === 0) {
+    if (!muted && oldScore % 10 === 0) {
         sound2.play();
     } else {
-        sound1.play();
+        if (!muted) {
+            sound1.play();
+        }
     }
 }
 
