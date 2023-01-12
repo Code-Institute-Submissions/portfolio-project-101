@@ -153,6 +153,7 @@ function calculateCorrectAnswer() {
     }
 }
 
+/*
 function incrementScore() {
 
     // Gets the current score from the DOM and increments it
@@ -161,6 +162,22 @@ function incrementScore() {
     document.getElementById("score").innerText = ++oldScore;
 
 }
+*/
+
+let sound1 = new Audio("assets/audio/Celebrate.mp3");
+let sound2 = new Audio("assets/audio/applaude.mp3");
+
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+
+    if (oldScore % 10 === 0) {
+        sound2.play();
+    } else {
+        sound1.play();
+    }
+}
+
 
 function incrementWrongAnswer() {
 
