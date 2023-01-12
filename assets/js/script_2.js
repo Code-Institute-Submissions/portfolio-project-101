@@ -11,13 +11,4 @@ window.addEventListener("load", function(){
     cell2.innerHTML = value2;
     cell3.innerHTML = value3;
 
-    if (value1) {
-        cell1.innerHTML = value1;
-    }
-    if (value2) {
-        cell2.innerHTML = value2;
-    }
-    if (value3) {
-        cell3.innerHTML = value3;
-    }
 });
