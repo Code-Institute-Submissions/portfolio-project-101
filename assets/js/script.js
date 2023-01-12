@@ -3,7 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
-
+/*
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
@@ -14,6 +14,21 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+ */
+    const myAudio = new Audio("assets/audio/Click.mp3");
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+        if (this.getAttribute("data-type") === "submit") {
+            checkAnswer();
+        } else {
+            myAudio.play();
+            let gameType = this.getAttribute("data-type");
+            runGame(gameType);
+        }
+    });
+}
+
+
 
     document.getElementById("answer-box").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
