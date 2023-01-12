@@ -118,6 +118,10 @@ body {
     float: left;
 }
 
+#sound-button-right {
+    float: right;
+}
+
 #sound-on, #sound-off {
     height: 60px;
 }

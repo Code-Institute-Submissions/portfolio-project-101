@@ -15,7 +15,7 @@ for (let button of buttons) {
         if (this.getAttribute("data-type") === "submit") {
             checkAnswer();
         } else {
-            if(!muted) {
+            if(muted) {
                 myAudio.play();
             }
 
@@ -34,19 +34,8 @@ for (let button of buttons) {
 });
 
 //------ Sound control buttons
-/*
-var soundOnImg = document.getElementById("sound-on");
-var soundOffImg = document.getElementById("sound-off");
 
- soundButton.onclick = function() {
-  if (muted) {
-    soundOnImg.style.display = "none";
-    soundOffImg.style.display = "block";
-  } else {
-    soundOnImg.style.display = "block";
-    soundOffImg.style.display = "none";
-  }};
-*/
+
 //-------Link
 
 var link = document.getElementById("link");
@@ -169,10 +158,10 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 
-    if (!muted && oldScore % 10 === 0) {
+    if (muted && oldScore % 10 === 0) {
         sound2.play();
     } else {
-        if (!muted) {
+        if (muted) {
             sound1.play();
         }
     }
