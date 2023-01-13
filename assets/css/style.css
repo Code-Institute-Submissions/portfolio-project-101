@@ -75,7 +75,7 @@ body {
 
 .score-area {
     margin: 5px auto;
-    width: 60%;
+    width: 100%;
     font-size: 1.2rem;
 }
 
@@ -111,6 +111,12 @@ body {
 .scores {
     display: inline-block;
     padding: 25px;
+}
+
+.scores-link {
+    display: inline-block;
+    padding-bottom: 50px;
+    margin-top: 0px;
 }
 
 /* Game Buttons */
@@ -220,7 +226,70 @@ body {
 
 /* Media queries */
 
-@media (max-width: 414px) {
+@media (max-width: 950px) {
+    .controls-area {
+        width: 100%;
+    }
+
+    .btn--big {
+
+        border: 8px solid;
+        width: 80px;
+        height: 80px;
+        font-size: 3rem;
+        margin: 0 36px; 
+        padding-top: 6px;
+    
+    }
+    
+    .btn--big::after{
+        font-size: 0.9rem;
+        left: -0.6rem;
+    }
+
+    .btn--gray {
+        margin-top: 0;
+        width: 30%;
+    }
+
+    .game-area {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .btn--big {
+
+        border: 8px solid;
+        width: 70px;
+        height: 70px;
+        font-size: 3rem;
+        margin: 0 27px; 
+        padding-top: 1px;
+    
+    }
+    
+    .btn--big::after{
+        font-size: 0.9rem;
+        left: -0.6rem;
+    }
+
+    .btn--gray {
+        margin-top: 0;
+        width: 30%;
+    }
+
+    .question-area {
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width: 714px) {
     .controls-area {
         width: 100%;
     }
@@ -240,8 +309,9 @@ body {
     }
 
     .question-area {
-        padding: 10% 0;
+        padding-top: 10px;
         width: 100%;
+        margin-top: 0;
     }
 
     .question-area span {
@@ -275,7 +345,7 @@ body {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
     .game-area {
         height: 70vh;
     }
