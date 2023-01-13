@@ -92,7 +92,7 @@ The site was deployed via GitHub pages:
 
 The __live__ link can be found here - https://svenloevgren.github.io/Portfolio-1-first-project/
 
-(Link for Code: https://github.com/SvenLoevgren/Portfolio-1-first-project).
+(Link for Code: https://github.com/SvenLoevgren/portfolio-project-2 ).
 
 # Credits
 
