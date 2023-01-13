@@ -80,17 +80,17 @@ No errors were returned when passing through the official W3C validator
 No errors were found when passing through the official (Jigsaw) validator
 Unfixed Bugs
 ### Java Script
-No errors were found when passing through the official (Jigsaw) validator
+No errors were found when passing through the official JS hint validator
 Unfixed Bugs
 ### Accessability
-No errors were found when passing through the official (Jigsaw) validator
+No errors were found when passing through the official (Chrome Lighthouse) validator
 Unfixed Bugs
 
 # Deployment
 
 The site was deployed via GitHub pages:
 
-The __live__ link can be found here - https://svenloevgren.github.io/Portfolio-1-first-project/
+The __live__ link can be found here - https://svenloevgren.github.io/portfolio-project-2/
 
 (Link for Code: https://github.com/SvenLoevgren/portfolio-project-2 ).
 
@@ -104,5 +104,5 @@ The Site and layout was taken from Code institute "love Running" site... and adj
 Instructions on how to implement form validation on the Sign Up page was taken from Code Institute education material.
 The icons on the site was taken from Font Awesome
 ## Media
-All photos used on the site was taken from pexels.com.
+Images - Pixabay, icons - Font awsome - Fonts - Google fonts - Logos - Code Institute program
 The background image used for the time session was taken from Code institute education material (of the "love running" project).
