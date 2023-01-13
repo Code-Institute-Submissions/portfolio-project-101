@@ -1,5 +1,4 @@
 /* Global style */
-
 body {
     background-color: white;
     font-family: "Raleway", sans-serif;
@@ -8,36 +7,30 @@ body {
 }
 
 /* Heading */
-
 .heading {
     text-align: center;
     font-size: 2.5rem;
 }
-
 .logo {
     height: 40px;
     padding-right: 5px;
 }
 
 /* Header Navigation Links */
-
 #menu{
     font-size: 110%;
     letter-spacing: 4px;
     margin-top: 66px;
 }
-
 #menu li {
     float: right;
     list-style-type: none;
     margin-right: 55px;
 }
-
 #menu a {
     text-decoration: none;
     color: inherit;
 }
-
 #menu a:hover{
     border-bottom: 1px solid #3a3a3a;
 }
@@ -46,10 +39,9 @@ body {
 
 .active{
     border-bottom: 1px solid #3a3a3a;
-    }
+}
 
 /* Game Layout */
-
 .game-area {
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -61,44 +53,36 @@ body {
     margin-right: auto;
     padding: 1%;
 }
-
 .question-area {
     width: 50%;
     font-size: 2rem;
     margin: auto;
     padding: 50px 0;
 }
-
 .question-area span {
     padding: 0 15px;
 }
-
 .score-area {
     margin: 5px auto;
     width: 100%;
     font-size: 1.2rem;
 }
-
 .controls-area {
     width: 85%;
     margin: 30px auto;
 }
-
 #score {
     color: green;
     font-weight: bold;
 }
-
 #incorrect {
     color: red;
     font-weight: bold;
 }
-
 .answer-message {
     display: none;
     font-size: 1rem;
 }
-
 #answer-box {
     border: none;
     color: #445361;
@@ -107,12 +91,10 @@ body {
     width: 80px;
     font-size: 1.2rem;
 }
-
 .scores {
     display: inline-block;
     padding: 25px;
 }
-
 .scores-link {
     display: inline-block;
     padding-bottom: 50px;
@@ -120,7 +102,6 @@ body {
 }
 
 /* Game Buttons */
-
 .btn {
     width: 220px;
     height: 60px;
@@ -129,11 +110,9 @@ body {
     letter-spacing: 1.2px;
     color: white;
 }
-
 .btn:focus {
     outline: none;
 }
-
 .btn--big {
     padding-top: 10px;
     border-radius: 50%;
@@ -145,7 +124,6 @@ body {
     margin: 0 30px;
     transition: all 0.5s;
 }
-
 .btn--big::after{
     content: attr(data-type);
     font-size: 1rem;
@@ -153,73 +131,60 @@ body {
     position: relative;
     left: -0.5em;
 }
-
 .btn--blue {
     border-color: blue;
     color: blue;
 }
-
 .btn--blue:active,
 .btn--blue:hover {
     background-color: darkblue;
     color: white;
 }
-
 .btn--orange {
     border-color: orange;
     color: orange;
 }
-
 .btn--orange:active,
 .btn--orange:hover {
     background-color: darkorange;
     color: white;
 }
-
 .btn--red {
     border-color: red;
     color: red;
 }
-
 .btn--red:active,
 .btn--red:hover {
     background-color: darkred;
     color: white;
 }
-
 .btn--green {
     border-color: green;
     color: green;
 }
-
 .btn--green:active,
 .btn--green:hover {
     background-color: darkgreen;
     color: white;
 }
-
 .btn--gray {
     margin-top: 25px;
     background-color: #445361;
     border: 1px transparent;
     border-radius: 20px;
 }
-
 .btn--gray:active,
 .btn--gray:hover {
     background-color: #0d1013;
 }
 
 /* Buttons -For Sound */
-
 #sound-button {
     float: left;
 }
-
 #sound-button-right {
     float: right;
 }
-
 #sound-on, #sound-off {
     height: 60px;
 }
@@ -237,7 +202,7 @@ body {
         font-size: 3rem;
         margin: 0 36px; 
         padding-top: 6px;    
-    }    
+    }
     .btn--big::after{
         font-size: 0.9rem;
         left: -0.6rem;
@@ -260,7 +225,7 @@ body {
         font-size: 3rem;
         margin: 0 27px; 
         padding-top: 1px;    
-    }    
+    }   
     .btn--big::after{
         font-size: 0.9rem;
         left: -0.6rem;
@@ -354,54 +319,53 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 144px;
-  }  
-  .my-table td {
+}
+    .my-table td {
     border: 1px solid black;
     padding: 8px;
     width: 33%;
-  }  
-  .my-table th {
+}
+    .my-table th {
     padding: 8px;
     font-size: 136%;
     width: 33%;
-  }
-  .section-1 {
+}
+    .section-1 {
     text-align: center;
     background-color: lightblue;
     font-size: xx-large;
     color: #0d1013;
-  }  
-  .section-2 {
+}
+    .section-2 {
     text-align: center;
     background-color: lightgreen;
     font-size: xx-large;
     color: #0d1013;
-  }  
-  .section-3 {
+}
+    .section-3 {
     text-align: center;
     background-color: lightyellow;
     font-size: xx-large;
     color: #0d1013;
-  }
-  
+}
+    
 /* Summary.html file media screens */
 /* Media for 610px and down */
 @media(max-width: 610px){
     .my-table th {
-        font-size: 100%;
-      }
-      .my-table td {       
-        font-size: 100%; 
-      }
+    font-size: 100%;
+    }
+    .my-table td {       
+    font-size: 100%; 
+    }
 }
 
 /* Media for 610px and down */
 @media(max-width: 300px){
     .my-table th {
-        font-size: 88%;
-      }
-      .my-table td {       
-        font-size: 77%; 
-      }
+    font-size: 88%;
+    }
+    .my-table td {       
+    font-size: 77%; 
+    }
 }
-
