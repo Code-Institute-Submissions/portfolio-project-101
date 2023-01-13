@@ -1,11 +1,29 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-var muted = true;
+var muted = false;
 
 function muteAudio(mute) {
     muted = mute;
 }    
+
+var soundOffButton = document.getElementById("sound-button");
+var soundButton = document.getElementById("sound-button-right");
+
+soundOffButton.onmouseover = function() {
+    if (!muted) {
+      soundOffButton.title = "Mute";
+    } else {
+      soundOffButton.title = "Sound is Off";
+    }
+  }
+  soundButton.onmouseover = function() {
+    if (muted) {
+      soundButton.title = "Sound On";
+    } else {
+      soundButton.title = "Sound";
+    }
+  }
 
 document.addEventListener("DOMContentLoaded", function() {
     const myAudio = new Audio("assets/audio/Click.mp3");
@@ -15,7 +33,7 @@ for (let button of buttons) {
         if (this.getAttribute("data-type") === "submit") {
             checkAnswer();
         } else {
-            if(muted) {
+            if(!muted) {
                 myAudio.play();
             }
 
@@ -158,10 +176,10 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 
-    if (muted && oldScore % 10 === 0) {
+    if (!muted && oldScore % 10 === 0) {
         sound2.play();
     } else {
-        if (muted) {
+        if (!muted) {
             sound1.play();
         }
     }
