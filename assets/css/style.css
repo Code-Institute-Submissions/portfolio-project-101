@@ -225,75 +225,60 @@ body {
 }
 
 /* Media queries */
-
+/* media screen width 950 and down */
 @media (max-width: 950px) {
     .controls-area {
         width: 100%;
     }
-
     .btn--big {
-
         border: 8px solid;
         width: 80px;
         height: 80px;
         font-size: 3rem;
         margin: 0 36px; 
-        padding-top: 6px;
-    
-    }
-    
+        padding-top: 6px;    
+    }    
     .btn--big::after{
         font-size: 0.9rem;
         left: -0.6rem;
     }
-
     .btn--gray {
         margin-top: 0;
         width: 30%;
     }
-
     .game-area {
         height: 400px;
     }
-
 }
 
+/* media screen width 800 and down */
 @media (max-width: 800px) {
-
     .btn--big {
-
         border: 8px solid;
         width: 70px;
         height: 70px;
         font-size: 3rem;
         margin: 0 27px; 
-        padding-top: 1px;
-    
-    }
-    
+        padding-top: 1px;    
+    }    
     .btn--big::after{
         font-size: 0.9rem;
         left: -0.6rem;
     }
-
     .btn--gray {
         margin-top: 0;
         width: 30%;
     }
-
     .question-area {
         width: 100%;
     }
 }
 
-
-
-
+/* media screen width 714 and down */
 @media (max-width: 714px) {
     .controls-area {
         width: 100%;
     }
-
     .btn--big {
         margin: 0 10px;
         padding: 5px;
@@ -302,26 +287,21 @@ body {
         height: 50px;
         font-size: 1.5rem;
     }
-
     .btn--big::after {
         font-size: 0.6rem;
         left: -0.7rem;
     }
-
     .question-area {
         padding-top: 10px;
         width: 100%;
         margin-top: 0;
     }
-
     .question-area span {
         padding: 0;
     }
-
     .answer-message {
         display: block;
     }
-
     #answer-box {
         display: block;
         margin: 0 auto;
@@ -329,29 +309,25 @@ body {
     .btn--gray {
         margin-top: 0;
     }
-
     .score-area {
         width: 100%;
     }
-
     .scores {
         margin: 0.5em auto;
         display: block;
         padding: 5px;
     }
-
     .heading {
         font-size: 2rem;
     }
 }
 
+/* media screen width 370 and down */
 @media (max-width: 370px) {
-
     #sound-on, #sound-off {
         width: 40px;
         height: 40px;
     }
-
     .heading {
         font-size: 1.5rem;
     }
@@ -361,35 +337,29 @@ body {
     .game-area {
         height: 70vh;
     }
-
     .controls-area {
         width: 75%;
         margin: 10px auto;
     }
-
     .btn--big {
         margin: 10px 10px;
     }
     .question-area {
         padding: 10px 0;
     }
-
 }
 
-/* Summary.html stylings */
-
+/* Summary.html file stylings */
 .my-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 144px;
-  }
-  
+  }  
   .my-table td {
     border: 1px solid black;
     padding: 8px;
     width: 33%;
-  }
-  
+  }  
   .my-table th {
     padding: 8px;
     font-size: 136%;
@@ -400,15 +370,13 @@ body {
     background-color: lightblue;
     font-size: xx-large;
     color: #0d1013;
-  }
-  
+  }  
   .section-2 {
     text-align: center;
     background-color: lightgreen;
     font-size: xx-large;
     color: #0d1013;
-  }
-  
+  }  
   .section-3 {
     text-align: center;
     background-color: lightyellow;
@@ -416,5 +384,24 @@ body {
     color: #0d1013;
   }
   
+/* Summary.html file media screens */
+/* Media for 610px and down */
+@media(max-width: 610px){
+    .my-table th {
+        font-size: 100%;
+      }
+      .my-table td {       
+        font-size: 100%; 
+      }
+}
 
-    
+/* Media for 610px and down */
+@media(max-width: 300px){
+    .my-table th {
+        font-size: 88%;
+      }
+      .my-table td {       
+        font-size: 77%; 
+      }
+}
+
