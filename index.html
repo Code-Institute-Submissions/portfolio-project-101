@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,40 +10,61 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <!-- css link -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
     <!-- title icon from Code Institute -->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <title>Kids Maths Summary</title>
+    <title>Kids Maths</title>
 </head>
 <!--Source to the js script is found at the bottom of the body element-->
 <body>
     <h1 class="heading">
-        Quiz Summary
+        <!--Images from pixabay for sound control buttons and Code Institute logo image-->
+        <span id="sound-button">            
+            <img id="sound-off" src="assets/images/sound-off.png" 
+            alt="Click -sound off" onclick="javascript:muteAudio(true);"> 
+        </span>
+        <img class="logo" src="assets/images/logo.png" alt="logo"> Kids Maths
+        <span id="sound-button-right">
+            <img id="sound-on" src="assets/images/sound_on.png" 
+            alt="Click -sound off" onclick="javascript:muteAudio(false);"> 
+        </span>
     </h1>
-    <nav id="menu">
-        <ul>
-            <li>
-                <a href="index.html"><i class="fas fa-city"></i>Reset Quiz</a>
-            </li>
-        </ul>
-    </nav>
-    <table class="my-table">
-        <thead>
-          <tr>
-                <th>Quiz Total Time</th>
-                <th>Correct Answers</th>
-                <th>Wrong Answers</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="section-1"><span id="cell1">0</span></td>
-                <td class="section-2"><span id="cell2">0</span></td>
-                <td class="section-3"><span id="cell3">0</span></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="game-area">
+        <div class="controls-area">
+            <button data-type="addition" class="btn btn--big btn--green">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button data-type="subtract" class="btn btn--big btn--blue">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button data-type="multiply" class="btn btn--big btn--orange">
+                <i class="fas fa-times"></i>
+            </button>
+            <button data-type="division" class="btn btn--big btn--red">
+                <i class="fas fa-divide"></i>
+            </button>
+        </div>
+        <div class="question-area">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+            <p class="answer-message">Enter Answer:</p>
+            <input id="answer-box" type="number">
+        </div>
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+    </div>
+    <div class="score-area">
+        <p class="scores">Time <span id="timer">0</span></p>
+        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+    </div>
+    <div>
+        <p class="scores-link"><strong><a href="summary.html" rel="noopener" 
+            target="_blank" id="link">Get Summary </a></strong>
+        </p>   
+    </div>
     <!-- page java script -->
-    <script src="assets/js/script_2.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
