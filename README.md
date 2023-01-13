@@ -1,5 +1,5 @@
-# Your local Youth Centre
-![Header](https://user-images.githubusercontent.com/119969411/209847272-1597e285-c5b4-48c2-b8d4-37698a029be5.jpg)
+# Kids Maths
+![image](https://user-images.githubusercontent.com/119969411/212360576-665ef017-aa43-4296-8930-b7c9a98a9992.png)
 
 The *__Local Youth Centre__* is a site that hopes to help parents with their kids to fit-in to the society, without allot of unnecessary struggling with daily routines, which soemtimes gives less motivation regarding family unity (the struggle will always be there - but the Youth Centre want's to losend it up a bit and make it less painful... nobody said that life is easy - especially rasing youth's, but help is here)...
 In short words, we would like to help parents to keep focus on their family without splitting it up - because of work and other necessary routines.
@@ -16,61 +16,33 @@ __*"Your Local Youth Center"*__ site has:
 * Links to pdf documents are put in the navigation bar, but also direct in paragraph text - for further information to the users (simplicity).
 * And last, but of most __*importance*__, the whole site content is built on spreading insperation and to motivate readers to register (marketing).
 
-## Navigation Bar
+## Summary page
 
-![image](https://user-images.githubusercontent.com/119969411/209848099-3566846a-0d32-483d-9efa-024ad1992b23.png)
+![image](https://user-images.githubusercontent.com/119969411/212361245-031be8be-16dd-41ee-a371-a276db375543.png)
 
 Featured on all three pages, the full responsive navigation bar includes links to the help, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
 This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 Nav Bar
 
-## The landing page image
+## The Game page image
 
-![image](https://user-images.githubusercontent.com/119969411/209848414-29308478-005f-46d6-9669-fb65da2ff064.png)
+![image](https://user-images.githubusercontent.com/119969411/212361394-4c19dba9-9387-4723-a47c-8e9110e9c92b.png)
+
 
 
 The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to.
 This section introduces the user to The *Youth Centre* with an eye catching animation to grab their attention
 Landing Page
 
-## The about Section
+## The game Main functions
 
-<img width="745" alt="image" src="https://user-images.githubusercontent.com/119969411/209848623-830ab1bf-83ea-46d0-a8cf-b15fab10579b.png">
+<img width="302" alt="image" src="https://user-images.githubusercontent.com/119969411/212361803-1a52316d-2b0a-4258-a49e-ed36e1ff7ab9.png">
+
 
 The *about/welcome* section will allow the user to see the benefits of joining the *"Local Youth Centre"*, as well as the benefits of Youth Centre's in general.
 In this section the user's will see the value of signing up for the Youth Centre and it should encourage the user to consider accepting assistance from us.
 A sales-pitch in this section is the inspiering letter from an already registered user.
 
-## Open Times section
-
-<img width="954" alt="image" src="https://user-images.githubusercontent.com/119969411/209848706-e9f84b8d-407b-4cc7-b0ed-b882eca05d02.png">
-
-This section will allow the user to see exactly when the meetups will happen, where they will be located and which caregiver that will be present.
-
-## The Footer
-
-<img width="569" alt="image" src="https://user-images.githubusercontent.com/119969411/209848784-c8b4a975-61f9-41ce-9b35-bc8660b2fd74.png">
-
-The footer section includes links to the relevant social media sites for the *Local Youth Centre". The links will open to a new tab to allow easy navigation for the user.
-The footer is valuable to the user as it encourages them to keep connected via social media.
-
-## Gallery
-
-![image](https://user-images.githubusercontent.com/119969411/209848976-4c13409c-d962-4521-be72-0755ac3f240e.png)
-
-The gallery will provide the user with supporting images to see what the meet ups look like.
-This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together.
-
-## The Sign Up Page
-
-![image](https://user-images.githubusercontent.com/119969411/209849104-a394f3f7-69b4-463d-8bec-2bd6e57abc62.png)
-
-
-This page will allow the user to get signed up to the *Youth Centre* to start their journey with the community. The user will be able specify if they would like to take part in working weeks, weekends or both types of Youth-care. The user will be asked to submit their full name and email address.
-
-The help link (how to document), in the navigation bar - on all of the site pages, will give more details of ie. what happens during and after the SignUp.
-
-In the "help" (how to document), we will add features as future realeases etc.
 
 # Testing
 
@@ -93,9 +65,13 @@ Whit all this above issue considered, the best option is to push this release an
 
 ## Validator Testing
 
-<img width="925" alt="image" src="https://user-images.githubusercontent.com/119969411/209744839-1f33ba21-a534-4a69-a613-98e635346ac2.png">
+![image](https://user-images.githubusercontent.com/119969411/212362331-ac16492c-e854-455b-85d3-13eb8d2be634.png)
 
-<img width="578" alt="image" src="https://user-images.githubusercontent.com/119969411/209748301-e8d2399b-9082-4577-8026-0674e381d7ea.png">
+![image](https://user-images.githubusercontent.com/119969411/212362501-f29d6a16-16cc-493a-822b-1338e82afd12.png)
+
+![image](https://user-images.githubusercontent.com/119969411/212362671-ed74c270-68e1-4202-b853-c09ec678d9fe.png)
+
+![image](https://user-images.githubusercontent.com/119969411/212362749-d37af5a7-9e84-41e0-aa30-0fe4edb2c7c8.png)
 
 
 ### HTML
@@ -103,10 +79,16 @@ No errors were returned when passing through the official W3C validator
 ### CSS
 No errors were found when passing through the official (Jigsaw) validator
 Unfixed Bugs
+### Java Script
+No errors were found when passing through the official (Jigsaw) validator
+Unfixed Bugs
+### Accessability
+No errors were found when passing through the official (Jigsaw) validator
+Unfixed Bugs
 
 # Deployment
 
-The site was deployed to GitHub pages:
+The site was deployed via GitHub pages:
 
 The __live__ link can be found here - https://svenloevgren.github.io/Portfolio-1-first-project/
 
