@@ -39,14 +39,14 @@ soundOffButton.onmouseover = function() {
     } else {
       soundOffButton.title = "Sound is Off";
     }
-}
+};
 soundButton.onmouseover = function() {
     if (muted) {
       soundButton.title = "Sound On";
     } else {
       soundButton.title = "Sound";
     }
-}
+};
 
 // Link to set localStorage data for summary.html
     var link = document.getElementById("link");
